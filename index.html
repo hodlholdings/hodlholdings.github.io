@@ -5,21 +5,48 @@
   <title>Hodl Holdings</title>
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
-<body style="font-family:sans-serif; background:#0d1117; color:white; margin:0">
+<body>
 
-<header style="padding:1rem; background:#111; color:white; display:flex; justify-content:space-between; align-items:center">
-  <a href="index.html" style="color:white; text-decoration:none; font-weight:bold; font-size:1.2rem;">
-    <img src="/favicon.png" alt="Logo" style="height:24px; vertical-align:middle; margin-right:8px;"> Hodl Holdings
-  </a>
-  <nav>
-    <a href="index.html" style="margin-right:1rem; color:#aaa;">Início</a>
-    <a href="sobre.html" style="margin-right:1rem; color:#aaa;">Sobre</a>
-    <a href="tese.html" style="margin-right:1rem; color:#aaa;">Tese</a>
-    <a href="estrutura.html" style="margin-right:1rem; color:#aaa;">Estrutura</a>
-    <a href="contato.html" style="margin-right:1rem; color:#aaa;">Contato</a>
-    <a href="/en/index.html" style="color:#58a6ff;">🌐 EN</a>
+<header style="padding:1rem; background:#111; color:white; display:flex; flex-direction:column; align-items:center;">
+  <div style="display:flex; justify-content:space-between; align-items:center; width:100%; max-width:800px;">
+    <a href="index.html" style="color:white; text-decoration:none; font-weight:bold; font-size:1.2rem;">
+      <img src="/favicon.png" alt="Logo" style="height:24px; vertical-align:middle; margin-right:8px;"> Hodl Holdings
+    </a>
+    <div class="lang-switch">
+      <a href="/en/index.html" style="color:#58a6ff;">🌐 EN</a>
+    </div>
+  </div>
+  <nav style="margin-top:1rem; display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
+    <a href="index.html" style="color:#aaa;">Início</a>
+    <a href="sobre.html" style="color:#aaa;">Sobre</a>
+    <a href="tese.html" style="color:#aaa;">Tese</a>
+    <a href="estrutura.html" style="color:#aaa;">Estrutura</a>
+    <a href="contato.html" style="color:#aaa;">Contato</a>
   </nav>
 </header>
+<style>
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+    margin-top: 0 !important;
+  }
+}
+body {
+  font-family: sans-serif;
+  background: #0d1117;
+  color: white;
+  margin: 0;
+  padding: 0 1rem;
+}
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+a { text-decoration: none; }
+</style>
 
 <section><h2>Hodl Holdings</h2><p>Uma sociedade anônima voltada à securitização do Bitcoin.</p></section>
 
