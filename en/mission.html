@@ -5,21 +5,48 @@
   <title>Hodl Holdings</title>
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
-<body style="font-family:sans-serif; background:#0d1117; color:white; margin:0">
+<body>
 
-<header style="padding:1rem; background:#111; color:white; display:flex; justify-content:space-between; align-items:center">
-  <a href="index.html" style="color:white; text-decoration:none; font-weight:bold; font-size:1.2rem;">
-    <img src="/favicon.png" alt="Logo" style="height:24px; vertical-align:middle; margin-right:8px;"> Hodl Holdings
-  </a>
-  <nav>
-    <a href="index.html" style="margin-right:1rem; color:#aaa;">Home</a>
-    <a href="about.html" style="margin-right:1rem; color:#aaa;">About</a>
-    <a href="thesis.html" style="margin-right:1rem; color:#aaa;">Thesis</a>
-    <a href="structure.html" style="margin-right:1rem; color:#aaa;">Structure</a>
-    <a href="contact.html" style="margin-right:1rem; color:#aaa;">Contact</a>
-    <a href="/index.html" style="color:#58a6ff;">🌐 PT</a>
+<header style="padding:1rem; background:#111; color:white; display:flex; flex-direction:column; align-items:center;">
+  <div style="display:flex; justify-content:space-between; align-items:center; width:100%; max-width:800px;">
+    <a href="index.html" style="color:white; text-decoration:none; font-weight:bold; font-size:1.2rem;">
+      <img src="/favicon.png" alt="Logo" style="height:24px; vertical-align:middle; margin-right:8px;"> Hodl Holdings
+    </a>
+    <div class="lang-switch">
+      <a href="/index.html" style="color:#58a6ff;">🌐 PT</a>
+    </div>
+  </div>
+  <nav style="margin-top:1rem; display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
+    <a href="index.html" style="color:#aaa;">Home</a>
+    <a href="about.html" style="color:#aaa;">About</a>
+    <a href="thesis.html" style="color:#aaa;">Thesis</a>
+    <a href="structure.html" style="color:#aaa;">Structure</a>
+    <a href="contact.html" style="color:#aaa;">Contact</a>
   </nav>
 </header>
+<style>
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav {
+    margin-top: 0 !important;
+  }
+}
+body {
+  font-family: sans-serif;
+  background: #0d1117;
+  color: white;
+  margin: 0;
+  padding: 0 1rem;
+}
+section {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+a { text-decoration: none; }
+</style>
 
 <section><h2>Mission & Vision</h2><p><strong>Mission:</strong> To preserve and grow real wealth across generations through Bitcoin-backed corporate structures...</p><p><strong>Vision:</strong> To become a reference in building resilient and modern wealth structures...</p></section>
 
